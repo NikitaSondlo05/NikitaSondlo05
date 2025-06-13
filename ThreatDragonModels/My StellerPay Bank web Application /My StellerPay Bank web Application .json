@@ -245,7 +245,7 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "providesAuthentication": false,
+              "providesAuthentication": true,
               "threats": []
             }
           },
@@ -520,8 +520,8 @@
                 "text": "transaction process"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -617,7 +617,7 @@
               "description": "process fund transfers",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -626,11 +626,11 @@
                 {
                   "id": "915e57ba-4ccd-40bd-8e2f-dc68124f0189",
                   "title": "New STRIDE threat",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "TBD",
                   "type": "Tampering",
                   "description": "an attacker modifying transcation data to redirect funds",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "use SSL for all communications and sign transaction data",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 1,
@@ -639,19 +639,12 @@
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 1,
+                "tampering": 2,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
