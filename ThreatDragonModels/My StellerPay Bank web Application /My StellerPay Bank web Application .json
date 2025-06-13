@@ -921,8 +921,8 @@
                 "text": "API gateway"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -1018,7 +1018,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -1027,11 +1027,11 @@
                 {
                   "id": "397bc847-4801-4749-92bd-c0c2f4357908",
                   "title": "New STRIDE threat",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "TBD",
                   "type": "Information disclosure",
                   "description": "account data is exposed via unsecured APIs",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "web application firewalls",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 3,
@@ -1040,11 +1040,11 @@
                 {
                   "id": "60bc0b66-3744-47b2-8888-50d6510e98e9",
                   "title": "New STRIDE threat",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "TBD",
                   "type": "Denial of service",
                   "description": "an attacker floods the platform with requests, preventing legitimate users from accessing services",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "detection softwares of unauthrized loggings",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 5,
@@ -1055,8 +1055,8 @@
                 "spoofing": 0,
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 1,
-                "denialOfService": 1,
+                "informationDisclosure": 3,
+                "denialOfService": 2,
                 "elevationOfPrivilege": 0
               }
             }
@@ -1218,13 +1218,11 @@
                 "text": "Transaction Log"
               },
               "topLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -1320,7 +1318,7 @@
               "description": "stores transactions  ",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
@@ -1330,11 +1328,11 @@
                 {
                   "id": "d5c65b59-ad6e-4fee-9dad-cb456af9f777",
                   "title": "",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "TBD",
                   "type": "Repudiation",
                   "description": "users may deny making transactions",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "strict access controls ",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 7,
@@ -1343,7 +1341,7 @@
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "repudiation": 1,
+                "repudiation": 2,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
