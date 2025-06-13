@@ -1292,7 +1292,8 @@
             "target": {
               "cell": "69b95da7-2720-42b9-97dc-3fced7e57986",
               "port": "d5a46a2e-c36d-4079-9ca3-66df253474d8"
-            }
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -1386,37 +1387,7 @@
                 "x": 630,
                 "y": 420
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "flow",
@@ -1532,7 +1503,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "send payment request",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1544,7 +1515,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "send payment request"
             ],
             "id": "e0462fbf-63ab-429b-a8bf-abbbcd05bb17",
             "source": {
@@ -1635,7 +1606,7 @@
                 "y": 630
               },
               {
-                "x": 830,
+                "x": 810,
                 "y": 680
               }
             ]
