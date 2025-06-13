@@ -1386,7 +1386,37 @@
                 "x": 630,
                 "y": 420
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -1632,8 +1662,8 @@
               "y": 110
             },
             "target": {
-              "x": 270,
-              "y": 340
+              "x": 330,
+              "y": 400
             },
             "vertices": [
               {
@@ -1643,6 +1673,10 @@
               {
                 "x": 250,
                 "y": 380
+              },
+              {
+                "x": 290,
+                "y": 410
               }
             ]
           },
