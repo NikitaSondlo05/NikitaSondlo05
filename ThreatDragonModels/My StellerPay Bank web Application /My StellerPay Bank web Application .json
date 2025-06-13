@@ -379,8 +379,8 @@
                 "text": "User Authentication"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -476,7 +476,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -485,11 +485,11 @@
                 {
                   "id": "cbc7d4e9-33d5-490c-88da-119e6b56f13c",
                   "title": "login interface",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "TBD",
                   "type": "Spoofing",
                   "description": "When an attacker manages to obtain stolen user credentials or takes advantage of weak password policies, it can lead to serious security breaches. This means that someone could gain unauthorized access to sensitive accounts or systems, putting both personal information and organizational data at risk.  strong password practices and protect their credentials to prevent such incidents.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "implement strong passwords",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 6,
@@ -497,7 +497,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -905,13 +905,6 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 2
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1188,7 +1181,27 @@
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "3bcda332-71bb-4d42-b01e-856b5359b22d",
+                  "title": "",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "getting unathorized access as an admin",
+                  "mitigation": "user traing and MFA+ strong passwords",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -1957,13 +1970,11 @@
                 "text": "Token Store"
               },
               "topLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -2059,7 +2070,7 @@
               "description": "holds third party tokens",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
@@ -2069,11 +2080,11 @@
                 {
                   "id": "84f8d5f4-4f48-435c-862d-380bd0f30fa3",
                   "title": "",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "TBD",
                   "type": "Denial of service",
                   "description": "accessive requests may cause the system to crash the server",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "deploy rate limiting",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 8,
@@ -2084,7 +2095,7 @@
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 1
+                "denialOfService": 2
               }
             }
           }
@@ -2093,6 +2104,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "My User",
-    "threatTop": 8
+    "threatTop": 9
   }
 }
